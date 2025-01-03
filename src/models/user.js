@@ -2,14 +2,14 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const mongoose = require("mongoose");
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
   },
   lastName: {
     type: String,
   },
-  emailID: {
+  emailId: {
     type: String,
   },
   password: {
@@ -18,12 +18,7 @@ const userSchema = mongoose.Schema({
   age: {
     type: Number,
   },
-  age: {
-    type: String,
-  },
 });
 
 const User = mongoose.model("User", userSchema);
-
-//module.exports = User;
 export default User;

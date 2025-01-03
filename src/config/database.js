@@ -8,6 +8,7 @@ export const connectDB = async () => {
     "mongodb+srv://kslearning24:fg11ckFt1QurYQg5@nodelearning.bgl4w.mongodb.net/"
   );
 };
+
 // connectDB().then(() => {
 //   console.log("Database connection established");
 // });
@@ -17,11 +18,6 @@ export const connectDB = async () => {
  //export default connectDB;
 // main().catch(err => console.log(err));
 
-// async function main() {
-//   await mongoose.connect('mongodb+srv://kslearning24:fg11ckFt1QurYQg5@nodelearning.bgl4w.mongodb.net/');
-
-//   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-// }
 
 // const kittySchema = new mongoose.Schema({
 //   name: String
